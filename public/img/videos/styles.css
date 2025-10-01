@@ -1,0 +1,138 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0d1a35;
+}
+
+
+
+#videoContainer {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#bgVideo {
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.button {
+    display: flex;
+    border: 0px solid #727272;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-right: 15px;
+    font-size: 16px;
+    margin-right: 30px;
+    background-color: #45454500;
+    color: #0d1a35;
+    transition: color 0.4s;
+}
+.button:hover {
+    display: flex;
+    
+}
+
+.play-icon {
+    padding:10px;
+    width: 12px;
+}
+
+.content {
+    position: absolute;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner {
+    position: absolute;
+    z-index: -1;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Sticky Navbar styles */
+.navbar {
+    position: fixed; /* changed from sticky to fixed */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    transition: background-color 0.4s, color 0.4s;
+    color: #0d1a35; /* Set initial text color to black */
+}
+
+
+.navbar .logo {
+    font-size: 19px;
+    font-weight: bold;
+    padding-left: 20px;
+    display: flex;
+}
+.material-icons {
+    margin-top: -1px;
+    padding-right: 10px;
+}
+
+.navbar-links {
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    gap: 4rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: inherit; /* Use inherited color */
+    transition: color 0.4s;
+}
+
+.navbar-links a:hover {
+    border-bottom: 1px solid #727272;
+   
+}
+
+/* When scrolled, the navbar will have a background and text color changes to white */
+body.user-scrolled .navbar {
+    background-color: #0d1a35;
+    color: white;
+}
+body.user-scrolled .play-icon {
+    color: white;
+}
+
+/* Additional content styling */
+.additional-content {
+    background-color: #0d1a35;
+    color: rgb(215, 215, 215);
+    padding: 50px;
+    font-size: 12px;
+    
+}
+.info {
+    margin-top: 50px;
+}

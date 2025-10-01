@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Video</title>
+    
+    <script src="https://threejs.org/build/three.js"></script>
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="logo"><i class="material-icons">cloud</i>DFS.DEV</div>
+        <ul class="navbar-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#aboutSection">ABOUT</a></li>
+            <li><a href="#infoSection">INFO</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <button class="button" onclick="toggleAudio()">
+            <i class="material-icons play-icon">volume_off</i>
+         </button>
+         
+        
+    </nav>
+
+    <!-- Video Container -->
+    <div id="videoContainer">
+        <video autoplay muted loop id="bgVideo">
+            <source src="apecompressed.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <!-- Sample content to show over the video -->
+        <div class="content">
+            <!-- <img src="banner.png" class="banner"> -->
+        </div>
+    </div>
+
+    <!-- Additional content below the video -->
+    <div class="about" id="aboutSection">
+    <div class="additional-content">
+        <h2>About</h2>
+        <p>What makes a great a web design? A great web design prioritizes the user's needs. This involves understanding the target audience and tailoring the design to meet their preferences and expectations.
+        Great web design is not just about the visual appearance. It's an amalgamation of aesthetics, user experience, functionality, and purpose. As web technologies and user expectations evolve, the criteria for great web design might shift, making it essential for designers to stay updated and continuously adapt.
+        </p>
+        <!-- Add as much content as you want here -->
+    </div>
+</div>
+<div class="info" id="infoSection">
+    <div class="additional-content">
+        <h2>Info</h2>
+        <p>You can add more content here. This area will be below the video and the user can scroll down to see it.</p>
+        <!-- Add as much content as you want here -->
+    </div>
+</div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
