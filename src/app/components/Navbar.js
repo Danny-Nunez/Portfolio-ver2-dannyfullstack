@@ -9,6 +9,8 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState('home'); // Default to 'home'
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const threshold = window.innerHeight * 0.1; // 10% of the page height
@@ -23,6 +25,8 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     // Only target sections that need to be observed
     const sections = document.querySelectorAll('div[id]:not(#preloader)'); // Exclude preloader
 
@@ -46,6 +50,7 @@ export default function Navbar() {
   }, []);
 
   const scrollToSection = (id) => {
+    if (typeof window === 'undefined') return;
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });

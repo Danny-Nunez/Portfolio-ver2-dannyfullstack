@@ -15,6 +15,8 @@ export default function AboutUs() {
   const fullText = `I'm a developer with an eye for design. I focus on delivering an immersive web interactive experience, that's clean and memorable. I am very passionate about building excellent web apps that improve the lives of those around me. When I'm not coding, I love to watch movies and workout.`;
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     const aboutSection = document.getElementById('about');
     const observer = new IntersectionObserver(
       (entries) => {

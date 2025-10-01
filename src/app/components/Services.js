@@ -43,6 +43,7 @@ export default function Services() {
   }, []);
 
   const scrollToAbout = () => {
+    if (typeof window === 'undefined') return;
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth' });

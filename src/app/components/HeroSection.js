@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   const scrollToAbout = () => {
+    if (typeof window === 'undefined') return;
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
