@@ -13,7 +13,7 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="min-h-screen flex flex-col bg-gradient-to-b from-black via-gray-900 to-blue-900"> {/* Gradient background */}
+      <div className=" flex flex-col bg-gradient-to-b from-black via-gray-900 to-blue-900"> {/* Gradient background */}
         <Navbar />
 
         <HeroSection />

@@ -10,6 +10,10 @@ const nextConfig = {
       },
     ],
   },
+  // Disable static optimization for client components
+  experimental: {
+    optimizePackageImports: ['react-icons'],
+  },
 };
 
 export default nextConfig;
