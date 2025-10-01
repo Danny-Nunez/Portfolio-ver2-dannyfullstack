@@ -13,14 +13,14 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="danny_tm_hero min-h-screen relative overflow-hidden" id="home">
+    <div className="  relative overflow-hidden" id="home">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 max-h-[600px] mt-24">
         <Image
           src="/images/Frame1.jpg"
           alt="Hero Background"
           fill
-          className="object-cover max-h-screen"
+          className="object-cover max-h-[600px]"
           priority
         />
         {/* Dark overlay for better text readability */}
@@ -30,7 +30,7 @@ export default function HeroSection() {
       </div>
 
       <div className="container mx-auto px-4 py-8 relative z-10">
-        <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="flex flex-col items-center justify-center ">
           {/* Centered Content */}
           <div className="flex flex-col items-center text-center">
             {/* Person Image with Shadow */}
