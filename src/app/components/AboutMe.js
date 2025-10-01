@@ -3,11 +3,11 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 
-const ThreeBackground = dynamic(() => import('./ThreeBackground'), {
-  ssr: false,
-});
+// const ThreeBackground = dynamic(() => import('./ThreeBackground'), {
+//   ssr: false,
+// });
 
 export default function AboutUs() {
   const [isVisible, setIsVisible] = useState(false);
@@ -58,7 +58,7 @@ export default function AboutUs() {
   return (
     <div className="danny_tm_about relative overflow-hidden" id="about" style={{backgroundColor: 'transparent', background: 'transparent'}}>
       {/* Three.js Animated Background */}
-      <ThreeBackground />
+      {/* <ThreeBackground /> */}
       
       <div className="container relative z-10">
         <div className="danny_tm_title_holder">

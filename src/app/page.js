@@ -9,7 +9,6 @@ import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 
 export const dynamic = 'force-dynamic'
-export const revalidate = false
 
 export default function HomePage() {
   
