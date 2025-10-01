@@ -138,13 +138,13 @@ export default function Portfolio() {
         <div className="container pb-20 pt-20 relative z-10">
           <div className="danny_tm_title_holder">
             <span className="!text-blue-500" style={{color: '#3b82f6 !important'}}>Portfolio</span>
-            <style jsx>{`
-              .danny_tm_title_holder span::before {
-                background-color: #3b82f6 !important;
-              }
-            `}</style>
             <h3 className="font-libre !text-white" style={{color: '#ffffff !important'}}>Check out some of my recent work</h3>
           </div>
+          <style dangerouslySetInnerHTML={{__html: `
+            .portfolio .danny_tm_title_holder span::before {
+              background-color: #3b82f6 !important;
+            }
+          `}} />
           <div>
             {/* Custom Navigation Buttons */}
             <div className="flex justify-end space-x-4 mb-4 pt-32">
