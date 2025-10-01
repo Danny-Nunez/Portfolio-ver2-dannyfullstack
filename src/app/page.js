@@ -1,12 +1,17 @@
 'use client'
 
 import React, { useEffect } from 'react'
-import Navbar from './components/Navbar' 
-import HeroSection from './components/HeroSection' 
+import dynamic from 'next/dynamic'
+import Navbar from './components/Navbar'
+import HeroSection from './components/HeroSection'
 import AboutMe from './components/AboutMe'
 import Services from './components/Services'
-import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
+
+const Portfolio = dynamic(() => import('./components/Portfolio'), {
+  ssr: false,
+  loading: () => <div className="min-h-screen flex items-center justify-center">Loading...</div>
+})
 
 export const dynamic = 'force-dynamic'
 
