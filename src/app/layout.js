@@ -4,6 +4,8 @@ import '../../public/css/dark.css';
 import '../../public/css/style.css';
 import './globals.css';
 
+export const dynamic = 'force-dynamic'
+
 export default function Layout({ children }) {
     return (
         <html lang="en">

@@ -63,17 +63,12 @@ export default function AboutUs() {
       <div className="container relative z-10">
         <div className="danny_tm_title_holder">
           <span 
-            className="!text-blue-500" 
+            className="!text-blue-500 about-blue-line" 
             style={{color: '#3b82f6 !important'}}
           >
             About Me
           </span>
         </div>
-        <style dangerouslySetInnerHTML={{__html: `
-          .danny_tm_about .danny_tm_title_holder span::before {
-            background-color: #3b82f6 !important;
-          }
-        `}} />
         <div className="about_inner">
           <div className="w-full wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="0.3s">
             {/* Glass Container for Description */}

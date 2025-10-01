@@ -52,3 +52,9 @@ textarea:-webkit-autofill:active {
   box-shadow: inset 0 0 20px 20px rgba(255, 255, 255, 0.1) !important;
   border-radius: 1rem !important;
 }
+
+/* Blue line for About Me and Portfolio titles */
+.about-blue-line::before,
+.portfolio-blue-line::before {
+  background-color: #3b82f6 !important;
+}
